@@ -7,8 +7,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
+import {MatGridListModule} from '@angular/material/grid-list';
+
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
+
+import { HttpClientModule } from '@angular/common/http'
 
 
 @NgModule({
@@ -22,7 +26,9 @@ import { FooterComponent } from './components/footer/footer.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    HttpClientModule,
+    MatGridListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
